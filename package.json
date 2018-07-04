@@ -1,0 +1,23 @@
+{
+  "name": "route-user-role-funnel",
+  "version": "1.0.0",
+  "description": "An ExpressJS middleware for filtering requests by user feature",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OblonDATA-IO/route-user-role-funnel.git"
+  },
+  "keywords": [
+    "middleware",
+    "express"
+  ],
+  "author": "Thomas Sham <thomas@oblondata.io>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OblonDATA-IO/route-user-role-funnel/issues"
+  },
+  "homepage": "https://github.com/OblonDATA-IO/route-user-role-funnel#readme"
+}
