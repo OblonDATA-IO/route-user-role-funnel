@@ -13,19 +13,22 @@
  * @return {function}
  */
 module.exports = (path = "user", field, role) => {
-    if (!!field) {
-        if (!!role){
-            return (req, res, next) => {
-                if (!!req.user && req[path][field] === role){
-                    next();
-                }else{
-                    next('route');
-                }
-            }
-        } else {
-            throw new Error("User role has to be a string");
-        }
-    } else {
+    if (!field) {
         throw new Error("Field has to be a string");
+    }
+
+    if (!role) {
+        throw new Error("User role has to be a string");
+    }
+
+    return (req, res, next) => {
+        if (
+            req.user &&
+            req[path][field] === role
+        ) {
+            next();
+        } else {
+            next("route");
+        }
     }
 };
