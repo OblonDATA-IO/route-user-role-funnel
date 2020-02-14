@@ -4,7 +4,7 @@
  */
 
 /**
- * Middleware for funneling routes by req[path][field] and role
+ * Middleware for funneling requests by req[path][field] and role
  * @module Middlewares
  * @function
  * @param {string} path - field that is to be matched in the request object
@@ -30,5 +30,5 @@ module.exports = (path = "user", field, role) => {
         } else {
             next("route");
         }
-    }
+    };
 };

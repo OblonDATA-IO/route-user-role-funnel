@@ -1,2 +1,2 @@
-# route-user-role-funnel
-An ExpressJS middleware for filtering requests by user feature
+# Route Request Funnel
+An ExpressJS middleware for filtering requests by request feature
