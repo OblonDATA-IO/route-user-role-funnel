@@ -31,8 +31,8 @@ module.exports = (path = "user", field, roles) => {
             roles.includes(req[path][field])
         ) {
             next();
-        } else {
-            next("route");
+            return;
         }
+        next("route");
     };
 };
